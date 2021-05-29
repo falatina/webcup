@@ -15,4 +15,11 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+    
+    /**
+     * @Route("/mentions-legales", name="mentions")
+     */
+    public function mention(){
+
+    }
 }
