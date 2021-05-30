@@ -8,7 +8,23 @@
         <a href="{{ path('app_logout') }}">Deconnexion</a>
     </div>
     {% endif %}
-    <div class="container shadow p-3 mb-5 bg-body rounded ">
+    <style>
+        .home {
+            margin: 1em auto;
+            max-width: 800px;
+            width: 95%;
+            font: 18px/1.5 sans-serif;
+        }
+        
+        @media (min-width: 1200px) {
+            .container1 {
+                margin: 1em auto;
+                max-width: 600px
+            }
+        }
+    </style>
+
+    <div class="container shadow p-3 mb-5 bg-body rounded container1 ">
         <h1 class="h3 mb-3 font-weight-normal text-center">Connectez vous</h1>
 
         <label for="inputEmail">Email</label>
@@ -25,8 +41,8 @@
             </label>
     </div>
     #}
-    <div class="container center mt-2 ">
-        <button class="btn btn-lg btn-outline-primary " type="submit ">
+    <div class="container d-flex justify-content mt-2 ">
+        <button class="btn btn-sm btn-outline-primary " type="submit ">
         Se connecter
     </button>
     </div>
